@@ -110,3 +110,11 @@ button:hover{
     display: flex;
     justify-content: center;
 }
+
+/*pass eye styling*/
+.fa-eye{
+    position: absolute;
+    top: 20px;
+    right: 13px;
+    cursor: pointer;
+}

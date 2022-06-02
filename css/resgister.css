@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Yanone+Kaffeesatz&display=swap');
+
+
+body{
+    background-color: #F2F2F2;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Yanone Kaffeesatz', 'Sans-serif';
+    cursor: default;
+} 
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 25vh;   
+    
+}
+
+/*adjusting form items*/
+.form{
+    background-color: #FAB3A0;
+    padding: 35px;
+    border-radius: 7%;
+    box-shadow: 0 0 1em #ffd3c7;
+    color: #942444;
+    width: 450px;
+}
+
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #942444;
+    background-color: transparent;
+    outline: none;
+    min-width: 200px;
+    font-size: 16px;
+    transition: all .5s ease-out;
+    border-radius: 0;
+}
+
+/*styling */
+.label-float{
+    position: relative;
+    padding-top: 15px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 600;
+}
+
+/*label animation*/
+.label-float input:focus{
+    border-bottom: 2px solid #F2F2F2;
+}
+
+.label-float label{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 15px;
+    transition: all .6s ease-out
+
+} 
+
+.label-float input:focus + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #F2F2F2;
+
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    color: #F2F2F2;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    padding-top: 15px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    width: 60%;
+
+}
+
+button{
+    background-image: linear-gradient(#942444, #942444);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 500ms;
+}
+
+button:hover{
+    background-size: 100% 100%;
+    background-position-x: left;
+}
+
+.justify-center{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}

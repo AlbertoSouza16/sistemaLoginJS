@@ -13,6 +13,7 @@ body{
     justify-content: center;
     width: 100%;
     margin-top: 30vh;   
+    
 }
 
 /*adjusting form items*/
@@ -22,7 +23,7 @@ body{
     border-radius: 7%;
     box-shadow: 0 0 1em #ffd3c7;
     color: #942444;
-
+    width: 400px;
 }
 
 h1{
@@ -147,4 +148,13 @@ p{
     padding-top: 30px;
     font-size: 1.1rem;
     text-align: center;
+}
+
+/*pass eye styling*/
+
+.fa-eye{
+    position: absolute;
+    top: 20px;
+    right: 13px;
+    cursor: pointer;
 }

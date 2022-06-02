@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Yanone+Kaffeesatz&display=swap');
 
 
-
+/*changing the background color*/
 body{
     background-color: #F2F2F2;
 }
 
+/*centering the background*/
 .container{
     display: flex;
     justify-content: center;
@@ -14,9 +15,10 @@ body{
     margin-top: 30vh;   
 }
 
+/*adjusting form items*/
 .form{
     background-color: #FAB3A0;
-    padding: 30px;
+    padding: 35px;
     border-radius: 7%;
     box-shadow: 0 0 1em #ffd3c7;
     color: #942444;
@@ -27,8 +29,10 @@ h1{
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Yanone Kaffeesatz', 'Sans-serif';
+    cursor: default;
 }
 
+/*adjusting the position f the labels and inputs*/
 .label-float input{
     width: 100%;
     padding: 5px 5px;
@@ -43,6 +47,7 @@ h1{
     border-radius: 0;
 }
 
+/*styling */
 .label-float{
     position: relative;
     padding-top: 15px;
@@ -52,6 +57,7 @@ h1{
     font-weight: 600;
 }
 
+/*label animation*/
 .label-float input:focus{
     border-bottom: 2px solid #F2F2F2;
 }
@@ -71,4 +77,73 @@ h1{
     margin-top: 0;
     color: #F2F2F2;
 
+}
+
+/*adjusting the link*/
+a{
+    color: #F2F2F2;
+    text-decoration: none;
+    
+}
+
+a:visited{
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+a:target{
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+/*link animation*/
+.justify-center a:hover{
+    color: #942444;
+    transition: .5s;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    color: #F2F2F2;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    padding-top: 15px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    width: 60%;
+
+}
+
+button{
+    background-image: linear-gradient(#942444, #942444);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 500ms;
+}
+
+button:hover{
+    background-size: 100% 100%;
+    background-position-x: left;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;
+}
+
+p{
+    padding-top: 30px;
+    font-size: 1.1rem;
+    text-align: center;
 }

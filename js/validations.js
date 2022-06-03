@@ -79,6 +79,25 @@ confPass.addEventListener('keyup', ()=>{
 
 function register(){
     if(validName && validLogin && validPass &&  validConfPass){
+
+        // local storage 
+
+        let listUser = JSON.parse(localStorage.getItem('listUser') || '[]')
+
+        listUser.push(
+            {
+                cadName: name.value,
+                cadLogin: login.value,
+                cadPass: pass.value
+            }
+        )
+
+        localStorage.setItem('listUser', JSON.stringify(listUser))
+
+        setTimeout(() => {
+            window.location.href = 'index.html'
+        }, 3000)    
+        
         msgSuccess.setAttribute('style', 'display: block')
         msgSuccess.innerHTML = '<strong>Sign up.</strong>'
         msgError.setAttribute('style', 'display: none')
@@ -89,4 +108,9 @@ function register(){
         msgSuccess.setAttribute('style', 'display: none')
         msgSuccess.innerHTML = ''
     }
+
+    
 }
+
+
+

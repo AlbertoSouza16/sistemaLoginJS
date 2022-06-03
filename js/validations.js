@@ -74,8 +74,8 @@ confPass.addEventListener('keyup', ()=>{
 
 function register(){
     if(validName && validLogin && validPass &&  validConfPass){
-        alert("cadastrou")
+        alert("Successfully registered!")
     }else{
-        alert("nao cadastrou")
+        alert("Fill in the fields correctly!")
     }
 }

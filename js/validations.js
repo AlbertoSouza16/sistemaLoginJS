@@ -15,13 +15,18 @@ let confPass = document.querySelector('#confPass');
 let labelConfPass = document.querySelector('#labelConfPass');
 let validConfPass = false
 
+let msgError = document.querySelector('#msgError');
+let msgSuccess = document.querySelector('#msgSuccess');
+
+//end variables
+
 name.addEventListener('keyup', ()=>{
     if(name.value.length <= 3){
         labelName.setAttribute('style', 'color: red');
         labelName.innerHTML = '<strong>FULL NAME * enter at least 3 characters </strong>'
         name.setAttribute('style', 'border-color: red');
         validName = false
-    }else{
+    }else {
         labelName.setAttribute('style', 'color: green');
         labelName.innerHTML = 'FULL NAME'
         name.setAttribute('style', 'border-color: green');
@@ -35,7 +40,7 @@ login.addEventListener('keyup', ()=>{
         labelLogin.innerHTML = '<strong>LOGIN * enter at least 5 characters </strong>'
         login.setAttribute('style', 'border-color: red');
         let validLogin = false
-    }else{
+    }else {
         labelLogin.setAttribute('style', 'color: green');
         labelLogin.innerHTML = 'LOGIN'
         login.setAttribute('style', 'border-color: green');
@@ -49,7 +54,7 @@ pass.addEventListener('keyup', ()=>{
         labelPass.innerHTML = '<strong>PASSWORD * enter at least 8 characters </strong>'
         pass.setAttribute('style', 'border-color: red');
         validPass = false
-    }else{
+    }else {
         labelPass.setAttribute('style', 'color: green');
         labelPass.innerHTML = 'PASSWORD'
         pass.setAttribute('style', 'border-color: green');
@@ -63,7 +68,7 @@ confPass.addEventListener('keyup', ()=>{
         labelConfPass.innerHTML = '<strong>CONFIRM PASSWORD * passwords do not match </strong>'
         confPass.setAttribute('style', 'border-color: red');
         validConfPass = false
-    }else{
+    }else {
         labelConfPass.setAttribute('style', 'color: green');
         labelConfPass.innerHTML = 'CONFIRM PASSWORD'
         confPass.setAttribute('style', 'border-color: green');
@@ -74,8 +79,14 @@ confPass.addEventListener('keyup', ()=>{
 
 function register(){
     if(validName && validLogin && validPass &&  validConfPass){
-        alert("Successfully registered!")
-    }else{
-        alert("Fill in the fields correctly!")
+        msgSuccess.setAttribute('style', 'display: block')
+        msgSuccess.innerHTML = '<strong>Sign up.</strong>'
+        msgError.setAttribute('style', 'display: none')
+        msgError.innerHTML = ''
+    }else {
+        msgError.setAttribute('style', 'display:block')
+        msgError.innerHTML = '<strong>Fill in the fields correctly.</strong>'
+        msgSuccess.setAttribute('style', 'display: none')
+        msgSuccess.innerHTML = ''
     }
 }

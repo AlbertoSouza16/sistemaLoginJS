@@ -97,9 +97,9 @@ function register(){
         setTimeout(() => {
             window.location.href = 'index.html'
         }, 3000)    
-        
+
         msgSuccess.setAttribute('style', 'display: block')
-        msgSuccess.innerHTML = '<strong>Sign up.</strong>'
+        msgSuccess.innerHTML = '<strong>Sign up, you will be redirected.</strong>'
         msgError.setAttribute('style', 'display: none')
         msgError.innerHTML = ''
     }else {

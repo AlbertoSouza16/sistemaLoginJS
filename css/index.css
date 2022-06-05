@@ -158,3 +158,10 @@ p{
     right: 13px;
     cursor: pointer;
 }
+
+#msgError{
+    text-align: center;
+    color: red;
+    padding: 10px;
+    display: none;
+}

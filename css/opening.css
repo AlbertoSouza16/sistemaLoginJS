@@ -1,0 +1,21 @@
+.alert{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10vh;
+    cursor: default;
+    width: 50%;
+}
+
+button{
+    color: red;
+    border: 0;
+    background-color: transparent;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+button:hover{
+    color: gray;
+}

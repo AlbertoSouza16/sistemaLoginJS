@@ -32,7 +32,7 @@ function login(){
     })
         
     if(login.value == userValid.login && pass.value == userValid.pass){
-        setTimeout()
+        window.location = "openingScreen.html"
     } else{
         loginLabel.setAttribute('style', 'color: red')
         login.setAttribute('style', 'border-color: red')

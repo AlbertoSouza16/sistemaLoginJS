@@ -33,6 +33,10 @@ function login(){
         
     if(login.value == userValid.login && pass.value == userValid.pass){
         window.location = "openingScreen.html"
+
+        let token = Math.random().toString(10).substring(2) + Math.random().toString(10).substring(2)
+
+        localStorage.setItem('token', token)
     } else{
         loginLabel.setAttribute('style', 'color: red')
         login.setAttribute('style', 'border-color: red')
